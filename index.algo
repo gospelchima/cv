@@ -1,0 +1,16 @@
+//task 1
+wordCount = 0
+vowelCount = 0
+
+sentence = ReadInputSentence()
+
+for character in sentence:
+    if character == ' ':
+        wordCount = wordCount + 1
+    elif character in ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']:
+        vowelCount = vowelCount + 1
+
+wordCount = wordCount + 1  # Increment for the last word
+
+Print("Number of words:", wordCount)
+Print("Number of vowels:", vowelCount)
